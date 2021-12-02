@@ -19,7 +19,7 @@ import {
   CCol,
   CRow,
 } from '@coreui/react'
-import { DocsCallout, DocsExample, Loading } from 'src/components'
+import { DocsCallout, DocsExample, Gap, Loading } from 'src/components'
 
 import ReactImg from 'src/assets/images/react.jpg'
 import map from 'src/assets/images/bitmap.png'
@@ -30,6 +30,7 @@ import denahImg from '../../assets/images/denah.png';
 import Api from 'src/Api'
 import LoadingOverlay from 'react-loading-overlay'
 import { BounceLoader, HashLoader } from 'react-spinners'
+import CardInfo from '../../components/CardInfo';
 
 
 
@@ -80,6 +81,7 @@ useEffect(() => {
     >
     <CRow>
       <CCol xs={12}>
+        <div style={{flexDirection: 'row', display: 'flex'}}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>Card</strong> <small>Image caps</small>
@@ -102,7 +104,13 @@ useEffect(() => {
               </CRow>
           </CCardBody>
         </CCard>
+        <Gap width={10}/>
+        <CardInfo/>
+        </div>
+  
+       
       </CCol>
+      
     </CRow>
     </LoadingOverlay>
   

@@ -8,6 +8,8 @@ import DocsCallout from './DocsCallout'
 import DocsLink from './DocsLink'
 import DocsExample from './DocsExample'
 import Loading from './Loading';
+import Gap from './Gap';
+import DetailInfo from './DetailInfo';
 
 export {
   AppBreadcrumb,
@@ -20,4 +22,6 @@ export {
   DocsLink,
   DocsExample,
   Loading,
+  Gap,
+  DetailInfo
 }
